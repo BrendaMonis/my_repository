@@ -151,4 +151,40 @@ To github.com:BrendaMonis/my_repository.git
 arquivo2.txt  README.md
 (base) aula@pg-sala12:~/my_repository$ cat arquivo2.txt
 Brenda Monis
-(base) aula@pg-sala12:~/my_repository$ 
+(base) aula@pg-sala12:~/my_repository$ git status
+No ramo main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) aula@pg-sala12:~/my_repository$ git pull
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (6/6), done.
+Unpacking objects: 100% (6/6), 4.04 KiB | 2.02 MiB/s, done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+From github.com:BrendaMonis/my_repository
+   cbe7bae..3d0da7c  main       -> origin/main
+Updating cbe7bae..3d0da7c
+Fast-forward
+ Aula_3       | 154 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ arquivo2.txt |   2 ++
+ 2 files changed, 156 insertions(+)
+ create mode 100644 Aula_3
+(base) aula@pg-sala12:~/my_repository$ cat arquivo2.txt
+Brenda Monis
+Teste 1 da aula de computação
+git.hub
+(base) aula@pg-sala12:~/my_repository$ git fetch
+(base) aula@pg-sala12:~/my_repository$ git status
+No ramo main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) aula@pg-sala12:~/my_repository$ ls 
+arquivo2.txt  Aula_3  README.md
+(base) aula@pg-sala12:~/my_repository$ cat arquivo2.txt
+Brenda Monis
+Teste 1 da aula de computação
+git.hub
+(base) aula@pg-sala12:~/my_repository$ git pull
+Already up to date.
