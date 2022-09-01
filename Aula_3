@@ -1,0 +1,154 @@
+ aula@pg-sala12:~$ ~/.ssh
+bash: /home/aula/.ssh: É um diretório
+(base) aula@pg-sala12:~$ ls ~/.ssh
+known_hosts
+(base) aula@pg-sala12:~$ ~/.ssh/known_hosts
+bash: /home/aula/.ssh/known_hosts: Permissão negada
+(base) aula@pg-sala12:~$ ls -l ~/.ssh/known_hosts
+-rw-r--r-- 1 aula aula 888 jun  1 11:16 /home/aula/.ssh/known_hosts
+(base) aula@pg-sala12:~$ $ ssh-keygen -t rsa -b 4096 -C "brenda.monis.moreno@usp.br"
+$: comando não encontrado
+(base) aula@pg-sala12:~$ ssh-keygen -t rsa -b 4096 -C "brenda.monis.moreno@usp.br"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/aula/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/aula/.ssh/id_rsa
+Your public key has been saved in /home/aula/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:swv8dOfPR87JLAEi816OwyvuEZpy/QbdNB2MMc5ZF0A brenda.monis.moreno@usp.br
+The key's randomart image is:
++---[RSA 4096]----+
+|           o=E.o.|
+|          o.+o.  |
+|           +. .  |
+|       o . + .   |
+|       .S + o    |
+|     .+..= o .  .|
+|   . +oo* = . ++.|
+|    o  =oO + o ++|
+|      oo=oo ..+. |
++----[SHA256]-----+
+(base) aula@pg-sala12:~$ ls ssh
+ls: não foi possível acessar 'ssh': Arquivo ou diretório inexistente
+(base) aula@pg-sala12:~$ ls ~/.ssh
+id_rsa  id_rsa.pub  known_hosts
+(base) aula@pg-sala12:~$ ls -1 ~/.ssh
+id_rsa
+id_rsa.pub
+known_hosts
+(base) aula@pg-sala12:~$ cat ~/.ssh/*.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCbXeCgLKAfSty0G+qE3eLHT0uMVSZKzF1V822xGqez9fU40VOrSWxcn6pjzTBOH0VWcHLhNgBTguOcbWw53Jt6YnH3IYihH6ubfFGZCGA5YwmpparzmmT3KwS81XlrG66jaTV8x1S88RICb5DwbCd0xKaTPkSMwuWAOiXcIDlMxpTub9t10dRkauu/D0oB+mZWQ7z3wTR/s9hNipqAIMA8FYzUo9oFbGBNGY7MvKd6PcElfEvXRkdaoLzhPS5rkO+k4h/SjecmkzVRLmru0rR/TaxC92jjkWy/MTAi/qVkqktXTc28IWw5NcoKAbspBtTdbyTLFOlu2U32cNON4d6gSHJYrhDDpUB2f6phL1z5utoA8TqYdOgcNK1R19SmsjVFaiSfrz36sbPa4cp1iIlJDZD+YbdZJxYujMES5banvxkXOwsPWBLmzydgG5ykq6s4xVk6F808wgZ0PKPtcrkWrFiCK4CAo7KhEqwv538gAaH9nDgaUFgj1a9oA4CvvA/jrGhpIZgyDGpuTkQ0KH53zqdNPMi0zY98alm9ZAM+g/q2WcLJiTTsvHgLCgXe2sD1LZh/r1VpgOEnywUUQ16O9y4i3JStoccLEKlwQyJzpF4aDrp7/zCgIiAe9cpfcSpI0q7STtFiqX80MkFZsMkkxMegioYn0oB5f8dGXbaKSQ== brenda.monis.moreno@usp.br
+(base) aula@pg-sala12:~$ $ eval "(ssh-agent -s)"
+$: comando não encontrado
+(base) aula@pg-sala12:~$  eval "$(ssh-agent -s)"
+Agent pid 9943
+(base) aula@pg-sala12:~$ ssh-add ~/.ssh/id_rsa
+Identity added: /home/aula/.ssh/id_rsa (brenda.monis.moreno@usp.br)
+(base) aula@pg-sala12:~$ git clone git@github.com:BrendaMonis/my_repository.git
+Cloning into 'my_repository'...
+The authenticity of host 'github.com (20.201.28.151)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,20.201.28.151' (ECDSA) to the list of known hosts.
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+(base) aula@pg-sala12:~$ ls 
+ 2019-10-31-111953_1280x1024_scrot.png   hisat2-2.1.0                           PRATICA_ENSAMBLAGEM_DE_GENOMAS
+ alamundo                                igv                                    PRATICA_RNASEQ
+'Área de Trabalho'                       IGV_Linux_2.13.0                       PRATICA_RNASEQ.zip
+ arquivo.txt                             IGV_Linux_2.13.0_WithJava.zip          Público
+ bbduk                                   Imagens                                R
+ bbduk.R2.fq                             install_emboss                         RNASeqPracticalTranscriptLevels
+ cuffdiff.txt                            jalview                                r.R
+ dia1                                    jalview-2_11_2_0-linux_x64-java_8.sh   rstudio-2022.02.3-492-amd64.deb
+ dia2                                    miniconda2                             rstudio-2022.02.3-492-amd64.deb.1
+ Documentos                              Modelos                                salmon-1.8.0_linux_x86_64
+ Downloads                               Música                                 SalmonBinaries
+ file1.tar.gz                            my_repository                          salmon-latest_linux_x86_64
+ flye                                    ncbi                                   Vídeos
+ GENOME_ANNOTATION                       PracticalTranscriptomics
+(base) aula@pg-sala12:~$ ls -1 ~/.ssh
+id_rsa
+id_rsa.pub
+known_hosts
+(base) aula@pg-sala12:~$ cd aula/my_repository
+bash: cd: aula/my_repository: Arquivo ou diretório inexistente
+(base) aula@pg-sala12:~$ nano arquivo2.txt
+(base) aula@pg-sala12:~$ cd my_repository
+(base) aula@pg-sala12:~/my_repository$ nano arquivo2.txt
+(base) aula@pg-sala12:~/my_repository$ ls my_repository
+ls: não foi possível acessar 'my_repository': Arquivo ou diretório inexistente
+(base) aula@pg-sala12:~/my_repository$ ls
+arquivo2.txt  README.md
+(base) aula@pg-sala12:~/my_repository$ ls-al
+ls-al: comando não encontrado
+(base) aula@pg-sala12:~/my_repository$ ls -la
+total 20
+drwxrwxr-x  3 aula aula 4096 set  1 20:14 .
+drwxr-xr-x 50 aula aula 4096 set  1 20:13 ..
+-rw-rw-r--  1 aula aula   13 set  1 20:14 arquivo2.txt
+drwxrwxr-x  8 aula aula 4096 set  1 20:02 .git
+-rw-rw-r--  1 aula aula   15 set  1 20:02 README.md
+(base) aula@pg-sala12:~/my_repository$ ls -al
+total 20
+drwxrwxr-x  3 aula aula 4096 set  1 20:14 .
+drwxr-xr-x 50 aula aula 4096 set  1 20:13 ..
+-rw-rw-r--  1 aula aula   13 set  1 20:14 arquivo2.txt
+drwxrwxr-x  8 aula aula 4096 set  1 20:02 .git
+-rw-rw-r--  1 aula aula   15 set  1 20:02 README.md
+(base) aula@pg-sala12:~/my_repository$ ls -al .git
+total 52
+drwxrwxr-x 8 aula aula 4096 set  1 20:02 .
+drwxrwxr-x 3 aula aula 4096 set  1 20:14 ..
+drwxrwxr-x 2 aula aula 4096 set  1 20:02 branches
+-rw-rw-r-- 1 aula aula  265 set  1 20:02 config
+-rw-rw-r-- 1 aula aula   73 set  1 20:02 description
+-rw-rw-r-- 1 aula aula   21 set  1 20:02 HEAD
+drwxrwxr-x 2 aula aula 4096 set  1 20:02 hooks
+-rw-rw-r-- 1 aula aula  137 set  1 20:02 index
+drwxrwxr-x 2 aula aula 4096 set  1 20:02 info
+drwxrwxr-x 3 aula aula 4096 set  1 20:02 logs
+drwxrwxr-x 4 aula aula 4096 set  1 20:02 objects
+-rw-rw-r-- 1 aula aula  112 set  1 20:02 packed-refs
+drwxrwxr-x 5 aula aula 4096 set  1 20:02 refs
+(base) aula@pg-sala12:~/my_repository$ git push
+Everything up-to-date
+(base) aula@pg-sala12:~/my_repository$ git add arquivo.txt
+fatal: pathspec 'arquivo.txt' não encontrou nenhum arquivo
+(base) aula@pg-sala12:~/my_repository$ git add arquivo2.txt
+(base) aula@pg-sala12:~/my_repository$ git commit -m "myFirstRepository" arquivo2.txt
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'aula@pg-sala12.(none)')
+(base) aula@pg-sala12:~/my_repository$ git config --global user.email "brenda.monis.moreno@usp.br"
+(base) aula@pg-sala12:~/my_repository$ git config --global user.email "BrendaMonis"
+(base) aula@pg-sala12:~/my_repository$ git commit -m "myFirstRepository" arquivo2.txt
+[main cbe7bae] myFirstRepository
+ 1 file changed, 1 insertion(+)
+ create mode 100644 arquivo2.txt
+(base) aula@pg-sala12:~/my_repository$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 290 bytes | 290.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:BrendaMonis/my_repository.git
+   b3aa3f3..cbe7bae  main -> main
+(base) aula@pg-sala12:~/my_repository$ ls 
+arquivo2.txt  README.md
+(base) aula@pg-sala12:~/my_repository$ cat arquivo2.txt
+Brenda Monis
+(base) aula@pg-sala12:~/my_repository$ 
