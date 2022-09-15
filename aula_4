@@ -1,0 +1,67 @@
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ python3
+Python 3.10.4 (main, Jun 29 2022, 12:14:53) [GCC 11.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello, 2022!")
+Hello, 2022!
+>>> % python3 hello.py
+  File "<stdin>", line 1
+    % python3 hello.py
+    ^
+SyntaxError: invalid syntax
+>>> 
+KeyboardInterrupt
+>>> quit()
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ vi
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ vi hello.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ python3
+Python 3.10.4 (main, Jun 29 2022, 12:14:53) [GCC 11.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> % puthon3 hello.py
+  File "<stdin>", line 1
+    % puthon3 hello.py
+    ^
+SyntaxError: invalid syntax
+>>> %python3 hello.py
+  File "<stdin>", line 1
+    %python3 hello.py
+    ^
+SyntaxError: invalid syntax
+>>> % python3 hello.py
+  File "<stdin>", line 1
+    % python3 hello.py
+    ^
+SyntaxError: invalid syntax
+>>> quit()
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ cat hello.py
+
+Dd
+B
+D
+D
+b
+ndd
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ vi hello.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ nano hello.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ cat hello.py
+#!/usr/bin/env
+Dd
+B
+D
+D
+b
+ndd
+^
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ python3
+Python 3.10.4 (main, Jun 29 2022, 12:14:53) [GCC 11.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ python3 hello.py
+  File "/home/brenda/hello.py", line 8
+    ^
+    ^
+SyntaxError: invalid syntax
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ nano hello.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ python3 hello.py
+hello.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ^C
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ 
