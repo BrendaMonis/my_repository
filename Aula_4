@@ -92,3 +92,38 @@ brenda Caio Lorraine
 brendaCaioLorraine
 >>> print('meu nome é', name2)
 meu nome é Caio
+KeyboardInterrupt
+>>> a = "um"
+>>> b = 1
+>>> c = 2
+>>> print(a, b, c)
+um 1 2
+>>> print(a+ b+ c)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>> print(b+ c)
+3
+>>> print(a+ str(b))
+um1
+>>> print(a,+ str(b))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: bad operand type for unary +: 'str'
+>>> print(a+ " " + str(b))
+um 1
+>>> print(a,"+", b)
+um + 1
+>>> print(a, b, sep="xxx")
+umxxx1
+>>> print(a, b, sep=" ")
+um 1
+>>> print(a, b, sep="")
+um1
+>>> print(a, b, sep="\t")
+um	1
+>>> print(a, b, sep='\t')
+um	1
+>>> 
+KeyboardInterrupt
+>>> 
