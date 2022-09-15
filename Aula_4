@@ -65,3 +65,30 @@ brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ python3 hello.py
 hello.py
 brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ^C
 brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ 
+
+
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ python3
+Python 3.10.4 (main, Jun 29 2022, 12:14:53) [GCC 11.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ python3
+Python 3.10.4 (main, Jun 29 2022, 12:14:53) [GCC 11.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> my_name = "brenda"
+>>> print("my_name")
+my_name
+>>> name2 = "Caio"
+>>> name3 = "Lorraine"
+>>> print(my_name)
+brenda
+>>> nome(= "jose"
+  File "<stdin>", line 1
+    nome(= "jose"
+         ^
+SyntaxError: invalid syntax
+>>> print(my_name, name2, name3)
+brenda Caio Lorraine
+>>> print(my_name+ name2+ name3)
+brendaCaioLorraine
+>>> print('meu nome é', name2)
+meu nome é Caio
