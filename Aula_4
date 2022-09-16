@@ -227,3 +227,4 @@ brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ./script1.py 1 2
 12
 <class 'str'>
 3
+#!/usr/bin/env python3
