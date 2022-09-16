@@ -127,3 +127,103 @@ um	1
 >>> 
 KeyboardInterrupt
 >>> 
+ano script1.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ cat script1.py
+#!/usr/bin/env python3
+Brenda
+Azul
+Princesa
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ chmod +x script1.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ls -l 
+total 44
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09 'Área de Trabalho'
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Documentos
+drwxr-xr-x 3 brenda brenda 4096 set 15 20:29  Downloads
+-rw-rw-r-- 1 brenda brenda   34 set 15 19:06  hello.py
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Imagens
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Modelos
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Música
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Público
+-rwxrwxr-x 1 brenda brenda   44 set 15 20:39  script1.py
+drwx------ 4 brenda brenda 4096 set  2 10:40  snap
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Vídeos
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ script1.py
+script1.py: comando não encontrado
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ./script.py
+bash: ./script.py: Arquivo ou diretório inexistente
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ./script1.py
+Traceback (most recent call last):
+  File "/home/brenda/./script1.py", line 2, in <module>
+    Brenda
+NameError: name 'Brenda' is not defined
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ nano script1.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ls 
+'Área de Trabalho'   Downloads   Imagens   Música    script1.py   Vídeos
+ Documentos          hello.py    Modelos   Público   snap
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ls -l
+total 44
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09 'Área de Trabalho'
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Documentos
+drwxr-xr-x 3 brenda brenda 4096 set 15 20:29  Downloads
+-rw-rw-r-- 1 brenda brenda   34 set 15 19:06  hello.py
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Imagens
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Modelos
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Música
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Público
+-rwxrwxr-x 1 brenda brenda   73 set 15 20:45  script1.py
+drwx------ 4 brenda brenda 4096 set  2 10:40  snap
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Vídeos
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ./script1.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ./script1.py II
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ nano script1.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ./script1.py 11 23
+  File "/home/brenda/./script1.py", line 6
+    print(sys.argv[1]
+         ^
+SyntaxError: '(' was never closed
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ nano script1.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ nano script1.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ./script1.py Brenda Caio Lorraine
+Traceback (most recent call last):
+  File "/home/brenda/./script1.py", line 5, in <module>
+    print(sys.argv[0])
+NameError: name 'sys' is not defined
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ python3
+Python 3.10.4 (main, Jun 29 2022, 12:14:53) [GCC 11.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ nano script1.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ./script1.py Brenda Caio Lorraine
+./script1.py
+Brenda
+Caio
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ nano script1.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ./script1.py 
+./script1.py
+Traceback (most recent call last):
+  File "/home/brenda/./script1.py", line 7, in <module>
+    print(sys.argv[1])
+IndexError: list index out of range
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ./script1.py 1 2
+./script1.py
+1
+2
+12
+<class 'str'>
+3
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ nano script1.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ./script1.py 1
+./script1.py
+1
+Traceback (most recent call last):
+  File "/home/brenda/./script1.py", line 8, in <module>
+    print(sys.argv[2])
+IndexError: list index out of range
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ nano script1.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ./script1.py 1 2
+./script1.py
+1
+2
+12
+<class 'str'>
+3
