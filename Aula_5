@@ -10,3 +10,104 @@ elif (ano % 400 != 0):
  print(sys.argv[1],"não é um ano bissexto")
 else:
  print(sys.argv[1],"é bissexto")
+
+
+
+
+------
+python3
+Python 3.10.4 (main, Jun 29 2022, 12:14:53) [GCC 11.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ nano scipt3.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ chmord +x script3.py
+Comando 'chmord' não encontrado, você quis dizer:
+  comando 'chmod' do deb coreutils (8.32-4.1ubuntu1)
+Experimente: sudo apt install <deb name>
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ chmod +x script3.py
+chmod: não foi possível acessar 'script3.py': Arquivo ou diretório inexistente
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ chmod +x scipt3.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ls -l
+total 56
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09 'Área de Trabalho'
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Documentos
+drwxr-xr-x 3 brenda brenda 4096 set 27 20:15  Downloads
+-rw-rw-r-- 1 brenda brenda   34 set 15 19:06  hello.py
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Imagens
+-rwxrwxr-x 1 brenda brenda  102 set 27 15:13  joao.py
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Modelos
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Música
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Público
+-rwxrwxr-x 1 brenda brenda  288 set 29 19:21  scipt3.py
+-rwxrwxr-x 1 brenda brenda  299 set 15 21:21  script1.py
+-rwxrwxr-x 1 brenda brenda  203 set 15 21:34  script2.py
+drwx------ 4 brenda brenda 4096 set  2 10:40  snap
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Vídeos
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ cat scipt3.py
+#! usr/bin/env python3
+import sys
+ano =  int(sys.argv[1])
+if (ano % 4 != 0):
+ print(sys.argv[1],"não é um ano bissexto") 
+elif (ano % 100 != 0):
+ print(sys.argv[1],"leap year")
+elif (ano % 400 != 0):
+ print(sys.argv[1],"não é um ano bissexto")
+else:
+ print(sys.argv[1],"é bissexto")
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ python3
+Python 3.10.4 (main, Jun 29 2022, 12:14:53) [GCC 11.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> len = 'aacgatc'
+>>> len(dna)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'dna' is not defined
+>>> quit ()
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ nano scipt.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ nano scipt3.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ python3
+Python 3.10.4 (main, Jun 29 2022, 12:14:53) [GCC 11.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> dna = 'AACGATC'
+>>> len(dna)
+7
+>>> dna = dna.upper()
+>>> countA = dna.count('A')
+>>> count A = dna.count('A')
+  File "<stdin>", line 1
+    count A = dna.count('A')
+          ^
+SyntaxError: invalid syntax
+>>> sibdna = dna[2:6]
+>>> subdna = dna[2:6]
+>>> print(subdna)
+CGAT
+>>> print(countA)
+3
+>>> dna[::-1]
+'CTAGCAA'
+>>> rev=dna[::-1]
+>>> rev = rev.replace ('c','w')
+>>> rev = rev.replace ('G','c')
+>>> rev = rev.replace ('C','w')
+>>> rev = rev.replace ('A','y')
+>>> rev = rev.replace ('T','A')
+>>> rev = rev.replace ('C','G')
+>>> rev = rev.replace ('A','T')
+>>> print(rev)
+wTycwyy
+>>> rev = rev.replace ('y','T')
+>>> rev = rev.replace ('w','G')
+>>> print(rev)
+GTTcGTT
+>>> print('{:<20}'.format('complement'),rev)
+complement           GTTcGTT
+>>> print('{:<10}'.format('complement'),rev)
+complement GTTcGTT
+>>> print('{:<20}'.format('complement'),rev)
+complement           GTTcGTT
+>>> print('{:<20}'.format('original sequence'),rev)
+original sequence    GTTcGTT
+>>> print('{:<20}'.format('reverse complement'),rev)
+reverse complement   GTTcGTT
