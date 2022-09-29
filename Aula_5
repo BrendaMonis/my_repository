@@ -1,0 +1,12 @@
+nano scipt3.py
+#! usr/bin/env python3
+import sys
+ano =  int(sys.argv[1])
+if (ano % 4 != 0):
+ print(sys.argv[1],"não é um ano bissexto") 
+elif (ano % 100 != 0):
+ print(sys.argv[1],"leap year")
+elif (ano % 400 != 0):
+ print(sys.argv[1],"não é um ano bissexto")
+else:
+ print(sys.argv[1],"é bissexto")
