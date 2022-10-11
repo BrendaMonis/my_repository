@@ -1,0 +1,46 @@
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ cd Downloads
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads$ ls -l
+total 4
+-rw-rw-r-- 1 brenda brenda 806 out 11 14:29 semana1.zip
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads$ unzip semana1.zip
+Archive:  semana1.zip
+   creating: semana1/
+  inflating: semana1/hello-world.c   
+ extracting: semana1/hello-world.py  
+  inflating: semana1/readme.first    
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads$ ls -l
+total 8
+drwxrwxr-x 2 brenda brenda 4096 ago 20  2020 semana1
+-rw-rw-r-- 1 brenda brenda  806 out 11 14:29 semana1.zip
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads$ cd semana1
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ ls
+hello-world.c  hello-world.py  readme.first
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ cat readme.first
+#Para compilar o programa hello-world.c usar o comando
+g++ hello-world.c -o hello-world
+
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ cat readme.first
+#Para compilar o programa hello-world.c usar o comando
+g++ hello-world.c -o hello-world
+
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ cat hello-world.py
+print("Hello, world")
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ time g++ hello-world.c -o hello-world
+Comando 'g++' não encontrado, mas poder ser instalado com:
+sudo apt install g++
+
+real	0m0,537s
+user	0m0,109s
+sys	0m0,069s
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ time ./hello-world.py
+bash: ./hello-world.py: Permissão negada
+
+real	0m0,001s
+user	0m0,001s
+sys	0m0,000s
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ time python3 ./hello-world.py
+Hello, world
+
+real	0m0,024s
+user	0m0,023s
+sys	0m0,000s
