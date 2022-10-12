@@ -1,0 +1,514 @@
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ cd Downloads/semana1
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ pwd
+/home/brenda/Downloads/semana1
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ ls -l
+total 12
+-rw-rw-r-- 1 brenda brenda 110 ago 20  2020 hello-world.c
+-rw-rw-r-- 1 brenda brenda  22 ago 20  2020 hello-world.py
+-rw-rw-r-- 1 brenda brenda  89 ago 20  2020 readme.first
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ cd
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ cd /usr/local/bin
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:/usr/local/bin$ cd Downloads/semana1
+bash: cd: Downloads/semana1: Arquivo ou diretório inexistente
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:/usr/local/bin$ cd ~/Downloads/semana1
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ cd /usr/local/bin
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:/usr/local/bin$ history
+    1  sudo update grub
+    2  sudo apt-get update
+    3  sudo apt-get upgrade
+    4  head /etc/default/grub
+    5  grep /etc/default/grub GRUB_CMDLINE_LINUX_DEFAULT
+    6  grep GRUB_CMDLINE_LINUX_DEFAULT /etc/default/grub
+    7  vim /etc/default/grub
+    8  nano /etc/default/grub
+    9  sudo nano /etc/default/grub
+   10  sudo upgrade grub
+   11  sudo update grub
+   12  sudo apt update grub
+   13  sudo update-grub
+   14  vi arquivo.txt
+   15  whoami
+   16  pwd
+   17  cd Downloads
+   18  ls
+   19  cd Downloads/semana1
+   20  cd Downloads
+   21  ls
+   22  unzip
+   23  cd semana1
+   24  unzip semana1.zip
+   25  cd semana1
+   26  ls
+   27  cat readme.first
+   28  cd ..
+   29  cd.
+   30  cd..
+   31  cd ..
+   32  cd Downloads/semana1
+   33  pwd
+   34  ls
+   35  ls -1
+   36  ls -l
+   37  cd /usr/local/bin
+   38  cd ~/Downloads/semana1
+   39  history
+   40  ls
+   41  cd /usr/local/bin
+   42  ls
+   43  ls /usr/local
+   44  cd Downloads
+   45  cd ..
+   46  cd Downloads
+   47  cd Downloads/semana1
+   48  cd Downloads
+   49  whoami
+   50  pwd
+   51  cd ..
+   52  pwd
+   53  cd Downloads
+   54  cd Downloads/semana1
+   55  ls
+   56  unzip semana1.zip
+   57  cd Downloads
+   58  cd Downloads/semana1
+   59  cd Downloads
+   60  ls
+   61  pwd
+   62  cd Downloads/semana1
+   63  cd Downloads /semana1
+   64  vi arquivo2.txt
+   65  python3
+   66  vi
+   67  vi hello.py
+   68  python3
+   69  cat hello.py
+   70  vi hello.py
+   71  nano hello.py
+   72  cat hello.py
+   73  python3
+   74  python3 hello.py
+   75  nano hello.py
+   76  python3 hello.py
+   77  python3
+   78  nano script1.py
+   79  cat script1.py
+   80  chmod +x script1.py
+   81  ls -l 
+   82  script1.py
+   83  ./script.py
+   84  ./script1.py
+   85  nano script1.py
+   86  ls 
+   87  ls -l
+   88  ./script1.py
+   89  ./script1.py II
+   90  nano script1.py
+   91  nano script1.py
+   92  ./script1.py Brenda Caio Lorraine
+   93  python3
+   94  nano script1.py
+   95  ./script1.py Brenda Caio Lorraine
+   96  nano script1.py
+   97  ./script1.py 
+   98  ./script1.py 1 2
+   99  nano script1.py
+  100  ./script1.py 1
+  101  nano script1.py
+  102  ./script1.py 1 2
+  103  ./script1.py um dois
+  104  ./script1.py 1 2
+  105  nano script1.py
+  106  ./script1.py um dois
+  107  nano script1.py
+  108  nano script2.py
+  109  nano script1.py
+  110  nano script2.py
+  111  nano script1.py
+  112  nano script2.py
+  113  ./script2.py
+  114  chmod +x script2.py
+  115  ls -l
+  116  ./script2.py
+  117  nano script2.py
+  118  ./script2.py
+  119  nano script2.py
+  120  ./script2.py
+  121  nano script2.py
+  122  ./script2.py
+  123  nano script2.py
+  124  ./script2.py
+  125  nano script2.py
+  126  python3
+  127  nano joao.py
+  128  chmod +x joao.py 
+  129  ls -l 
+  130  cat joao.py
+  131  nano joao.py
+  132  cat joao.py
+  133  python3
+  134  nano scipt3.py
+  135  chmord +x script3.py
+  136  chmod +x script3.py
+  137  chmod +x scipt3.py
+  138  ls -l
+  139  cat scipt3.py
+  140  python3
+  141  nano scipt.py
+  142  nano scipt3.py
+  143  python3
+  144  nano bruna.py
+  145  chmod +x bruna.py
+  146  ls -l
+  147  cat bruna.py
+  148  python3
+  149  git clone -b master https://github.com/Nesper94/metabiome.git
+  150  conda install
+  151  conda install -c conda-forge mamba --yes
+  152  glibc >=2.26
+  153  conda -v
+  154  cd /tmp
+  155  curl https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh --output anaconda.sh
+  156  sha256sum anaconda.sh
+  157  ls
+  158  install.sh
+  159  git clone -b master https://github.com/Nesper94/metabiome.git
+  160  cd metabiome/
+  161  bash install.sh
+  162  canda init
+  163  metabiome bowtie2 -i filtered_reads/ -o decontaminated_reads/     -hu filtered_reads/GRCh38_sub.fna -ph filtered_reads/PhiX_NC_001422.1.fasta
+  164  nano arquivo.txt
+  165  cat arquivo.txt | sort | uniq -c | sort -n
+  166  cd Downloads
+  167  ls -l
+  168  unzip semana1(1).zip
+  169  unzip 'semana1(1).zip'
+  170  ls -l
+  171  unzip semana1ex.zip
+  172  cd Downloads
+  173  ls -l
+  174  unzip semana1.zip
+  175  cd Downloads
+  176  ls -l
+  177  unzip semana1.zip
+  178  ls -l
+  179  cd semana1
+  180  ls
+  181  cat readme.first
+  182  cat hello-world.py
+  183  time g++ hello-world.c -o hello-world
+  184  time ./hello-world.py
+  185  time python3 ./hello-world.py
+  186  g++ hello-world.c -o hello-world
+  187  cd home
+  188  cd :
+  189  cd Downloads
+  190  cd/
+  191  cd /
+  192  ls -F
+  193  ls -l
+  194  history
+  195  189
+  196  cd Downloads
+  197  ls -l
+  198  fd< >< > 
+  199  fd   
+  200  ls< >< >
+  201  ls   
+  202  ls -F *.txt
+  203  ls -F *.zip
+  204  cd ~/
+  205  ls -F
+  206  ls -aF
+  207  pwd
+  208  cd Downloads
+  209  pwd
+  210  cd ~/
+  211  cd Downloads
+  212  cd .
+  213  cd ..
+  214  cd ../../Brenda/oi
+  215  cd ../Brenda/oi
+  216  cd ../Brenda/Downloads
+  217  cd ../../Brenda
+  218  man wc
+  219  apropos column
+  220  wc -c
+  221  wc -c -l /var/log/messages
+  222  apropos column
+  223  cd Downloads
+  224  cd ~/
+  225  \n
+  226  \t
+  227  ls -l
+  228  mv
+  229  mv bruna.py
+  230  mv --help
+  231  cp bruna.py
+  232  mv bruna.py -b
+  233  cd Downloads
+  234  ls -l
+  235  unzip semana1.zip
+  236  ls -l
+  237  cd semana1
+  238  ls
+  239  cat readme.first
+  240  cat hello-world.c
+  241  cat hello-world.py
+  242  time g++ hello-world.c -o hello-world
+  243  time ./hello-world.c
+  244  time ./hello-world.py
+  245  time python3 ./hello-world.py
+  246  cd ..
+  247  cd .
+  248  cd ../../Downloads/semana1
+  249  cd Downloads/semana1
+  250  ls -l
+  251  ls -F
+  252  cd ..
+  253  ls -F
+  254  ls -a
+  255  cd /bin/
+  256  ls
+  257  ls -l
+  258  ls -lt
+  259  ls -lt | head
+  260  date ; sleep 2; date
+  261  date | sleep 2 | date
+  262  man sleep
+  263  cd ~
+  264  curl -O https://raw.githubusercontent.com/labbces/cen0336/master/files/cuffdiff.txt
+  265  wget -O https://raw.githubusercontent.com/labbces/cen0336/master/files/cuffdiff.txt
+  266  install curl
+  267  install -h
+  268  install --help
+  269  cd ~
+  270  grep Chr7 cuffdiff.txt > fav_chr_cuffdiff.txt
+  271  cd Downloads/semana1
+  272  pwd
+  273  ls -l
+  274  ls
+  275  ls -l
+  276  cd Downloads/semana1
+  277  pwd
+  278  ls -l
+  279  cd
+  280  cd /usr/local/bin
+  281  cd Downloads/semana1
+  282  cd ~/Downloads/semana1
+  283  cd /usr/local/bin
+  284  history
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:/usr/local/bin$ !279
+cd
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ls /usr/loacl
+ls: não foi possível acessar '/usr/loacl': Arquivo ou diretório inexistente
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ls /usr/loacl/bin
+ls: não foi possível acessar '/usr/loacl/bin': Arquivo ou diretório inexistente
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ cd
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ls /usr/local/bin
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ls /usr/local
+bin  etc  games  include  lib  man  sbin  share  src
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ cd Downloads
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads$ cd ..
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ !280
+cd /usr/local/bin
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:/usr/local/bin$ cd ..
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:/usr/local$ cd ../..
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:/$ cd /usr/local/bin
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:/usr/local/bin$ cd ../../home/brenda/Downloads/semana1
+bash: cd: ../../home/brenda/Downloads/semana1: Arquivo ou diretório inexistente
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:/usr/local/bin$ cd /usr/local
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:/usr/local$ cd ../../home/brenda/Downloads/semana1
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ ls -l
+total 12
+-rw-rw-r-- 1 brenda brenda 110 ago 20  2020 hello-world.c
+-rw-rw-r-- 1 brenda brenda  22 ago 20  2020 hello-world.py
+-rw-rw-r-- 1 brenda brenda  89 ago 20  2020 readme.first
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ cp hello-world ~/
+cp: não foi possível obter estado de 'hello-world': Arquivo ou diretório inexistente
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ cp hello-world.c ~/brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ ls -l ~/
+total 72
+-rw-rw-r-- 1 brenda brenda    0 out  6 09:25 '=2.26'
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09 'Área de Trabalho'
+-rw-rw-r-- 1 brenda brenda   52 out 11 14:10  arquivo.txt
+-rwxrwxr-x 1 brenda brenda  101 out  1 10:02  bruna.py
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Documentos
+drwxr-xr-x 4 brenda brenda 4096 out 12 11:41  Downloads
+-rw-rw-r-- 1 brenda brenda    0 out 12 11:48  fav_chr_cuffdiff.txt
+-rw-rw-r-- 1 brenda brenda   34 set 15 19:06  hello.py
+-rw-rw-r-- 1 brenda brenda  110 out 12 12:25  hello-world.c
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Imagens
+-rwxrwxr-x 1 brenda brenda  102 set 27 15:13  joao.py
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Modelos
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Música
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Público
+-rwxrwxr-x 1 brenda brenda  288 set 29 19:29  scipt3.py
+-rwxrwxr-x 1 brenda brenda  299 set 15 21:21  script1.py
+-rwxrwxr-x 1 brenda brenda  203 set 15 21:34  script2.py
+drwx------ 4 brenda brenda 4096 set  2 10:40  snap
+drwxr-xr-x 2 brenda brenda 4096 set  2 10:09  Vídeos
+-rw-r--r-- 1 brenda brenda 2449 out 11 15:05  x
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ mv hello-world.c bre_bre
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ ls -l
+total 12
+-rw-rw-r-- 1 brenda brenda 110 ago 20  2020 bre_bre
+-rw-rw-r-- 1 brenda brenda  22 ago 20  2020 hello-world.py
+-rw-rw-r-- 1 brenda brenda  89 ago 20  2020 readme.first
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ mv bre_bre hello-world.c
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ ls -l
+total 12
+-rw-rw-r-- 1 brenda brenda 110 ago 20  2020 hello-world.c
+-rw-rw-r-- 1 brenda brenda  22 ago 20  2020 hello-world.py
+-rw-rw-r-- 1 brenda brenda  89 ago 20  2020 readme.first
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ curl -O https://raw.githubusercontent.com/labbces/cen0336/master/files/cuffdiff.txt~
+Comando 'curl' não encontrado, mas poder ser instalado com:
+sudo snap install curl  # version 7.84.0, or
+sudo apt  install curl  # version 7.81.0-1ubuntu1.4
+Veja 'snap info curl' para versões adicionais.
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ ^C
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ apropos
+apropos o quê?
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ count
+Comando 'count' não encontrado, você quis dizer:
+  comando 'mount' do deb mount (2.37.2-4ubuntu3)
+  comando 'ocount' do deb oprofile (1.4.0-0ubuntu7)
+Experimente: sudo apt install <deb name>
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ sudo snap install curl
+[sudo] senha para brenda: 
+curl 7.84.0 de Wouter van Bommel (woutervb) instalado
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ curl -O https://raw.githubusercontent.com/labbces/cen0336/master/files/cuffdiff.txt~
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    14  100    14    0     0     38      0 --:--:-- --:--:-- --:--:--    38
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ ls -lh
+total 16K
+-rw-rw-r-- 1 brenda brenda  14 out 12 12:37 cuffdiff.txt~
+-rw-rw-r-- 1 brenda brenda 110 ago 20  2020 hello-world.c
+-rw-rw-r-- 1 brenda brenda  22 ago 20  2020 hello-world.py
+-rw-rw-r-- 1 brenda brenda  89 ago 20  2020 readme.first
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ head cuffdiff.txt~
+404: Not Foundbrenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ head cuffdiff.txt
+head: não foi possível abrir 'cuffdiff.txt' para leitura: Arquivo ou diretório inexistente
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~/Downloads/semana1$ cd 
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ curl -O https://raw.githubusercontent.com/labbces/cen0336/master/files/cuffdiff.txt~
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    14  100    14    0     0     34      0 --:--:-- --:--:-- --:--:--    34
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ls -lh
+total 76K
+-rw-rw-r-- 1 brenda brenda    0 out  6 09:25 '=2.26'
+drwxr-xr-x 2 brenda brenda 4,0K set  2 10:09 'Área de Trabalho'
+-rw-rw-r-- 1 brenda brenda   52 out 11 14:10  arquivo.txt
+-rwxrwxr-x 1 brenda brenda  101 out  1 10:02  bruna.py
+-rw-rw-r-- 1 brenda brenda   14 out 12 12:38  cuffdiff.txt~
+drwxr-xr-x 2 brenda brenda 4,0K set  2 10:09  Documentos
+drwxr-xr-x 4 brenda brenda 4,0K out 12 11:41  Downloads
+-rw-rw-r-- 1 brenda brenda    0 out 12 11:48  fav_chr_cuffdiff.txt
+-rw-rw-r-- 1 brenda brenda   34 set 15 19:06  hello.py
+-rw-rw-r-- 1 brenda brenda  110 out 12 12:25  hello-world.c
+drwxr-xr-x 2 brenda brenda 4,0K set  2 10:09  Imagens
+-rwxrwxr-x 1 brenda brenda  102 set 27 15:13  joao.py
+drwxr-xr-x 2 brenda brenda 4,0K set  2 10:09  Modelos
+drwxr-xr-x 2 brenda brenda 4,0K set  2 10:09  Música
+drwxr-xr-x 2 brenda brenda 4,0K set  2 10:09  Público
+-rwxrwxr-x 1 brenda brenda  288 set 29 19:29  scipt3.py
+-rwxrwxr-x 1 brenda brenda  299 set 15 21:21  script1.py
+-rwxrwxr-x 1 brenda brenda  203 set 15 21:34  script2.py
+drwx------ 5 brenda brenda 4,0K out 12 12:37  snap
+drwxr-xr-x 2 brenda brenda 4,0K set  2 10:09  Vídeos
+-rw-r--r-- 1 brenda brenda 2,4K out 11 15:05  x
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ head cuffdiff.txt~
+404: Not Foundbrenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ head cuffdiff.txt
+head: não foi possível abrir 'cuffdiff.txt' para leitura: Arquivo ou diretório inexistente
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ curl -O https://raw.githubusercontent.com/labbces/cen0336/master/files/cuffdiff.txt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 1087k  100 1087k    0     0   761k      0  0:00:01  0:00:01 --:--:--  761k
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ls -lh
+total 1,2M
+-rw-rw-r-- 1 brenda brenda    0 out  6 09:25 '=2.26'
+drwxr-xr-x 2 brenda brenda 4,0K set  2 10:09 'Área de Trabalho'
+-rw-rw-r-- 1 brenda brenda   52 out 11 14:10  arquivo.txt
+-rwxrwxr-x 1 brenda brenda  101 out  1 10:02  bruna.py
+-rw-rw-r-- 1 brenda brenda 1,1M out 12 12:39  cuffdiff.txt
+-rw-rw-r-- 1 brenda brenda   14 out 12 12:38  cuffdiff.txt~
+drwxr-xr-x 2 brenda brenda 4,0K set  2 10:09  Documentos
+drwxr-xr-x 4 brenda brenda 4,0K out 12 11:41  Downloads
+-rw-rw-r-- 1 brenda brenda    0 out 12 11:48  fav_chr_cuffdiff.txt
+-rw-rw-r-- 1 brenda brenda   34 set 15 19:06  hello.py
+-rw-rw-r-- 1 brenda brenda  110 out 12 12:25  hello-world.c
+drwxr-xr-x 2 brenda brenda 4,0K set  2 10:09  Imagens
+-rwxrwxr-x 1 brenda brenda  102 set 27 15:13  joao.py
+drwxr-xr-x 2 brenda brenda 4,0K set  2 10:09  Modelos
+drwxr-xr-x 2 brenda brenda 4,0K set  2 10:09  Música
+drwxr-xr-x 2 brenda brenda 4,0K set  2 10:09  Público
+-rwxrwxr-x 1 brenda brenda  288 set 29 19:29  scipt3.py
+-rwxrwxr-x 1 brenda brenda  299 set 15 21:21  script1.py
+-rwxrwxr-x 1 brenda brenda  203 set 15 21:34  script2.py
+drwx------ 5 brenda brenda 4,0K out 12 12:37  snap
+drwxr-xr-x 2 brenda brenda 4,0K set  2 10:09  Vídeos
+-rw-r--r-- 1 brenda brenda 2,4K out 11 15:05  x
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ head cuffdiff.txt
+AC148152.3_FG006	AC148152.3_FG006	AC148152.3_FG006	Chr2:231237971-231241387	B73.s	Mo17.s	NOTEST	0.0125804	0	-1.79769e+308	-1.79769e+308	0.32736	1	no
+AC148152.3_FG008	AC148152.3_FG008	AC148152.3_FG008	Chr2:231209190-231213723	B73.s	Mo17.s	OK	5.83386	0.0236324	-5.508824.61461	3.93829e-06	0.000124139	yes
+AC148167.6_FG001	AC148167.6_FG001	AC148167.6_FG001	Chr7:11663430-11671232	B73.s	Mo17.s	OK	14.539	14.2519	-0.0199491	0.0230670.981597	1.04126	no
+AC149475.2_FG003	AC149475.2_FG003	AC149475.2_FG003	Chr9:152490485-152495067	B73.s	Mo17.s	OK	81.7656	50.8097	-0.475769	0.47825	0.632472	0.880662	no
+AC149810.2_FG008	AC149810.2_FG008	AC149810.2_FG008	Chr9:151631158-151633751	B73.s	Mo17.s	OK	0.483528	15.9389	3.49541-3.43503	0.000592497	0.00851925	yes
+AC149818.2_FG005	AC149818.2_FG005	AC149818.2_FG005	Chr9:152441239-152442457	B73.s	Mo17.s	NOTEST	0.355355	0	-1.79769e+308	-1.79769e+308	0.100765	1	no
+AC149829.2_FG002	AC149829.2_FG002	AC149829.2_FG002	Chr9:151116516-151116771	B73.s	Mo17.s	OK	1.79674	5.96335	1.19966	-1.072680.283416	0.561236	no
+AC149829.2_FG003	AC149829.2_FG003	AC149829.2_FG003	Chr9:151118219-151121978	B73.s	Mo17.s	OK	12.6834	4.46098	-1.04493	1.17784	0.238859	0.501249	no
+AC152495.1_FG013	AC152495.1_FG013	AC152495.1_FG013	Chr10:3393688-3396738	B73.s	Mo17.s	NOTEST	0	0	0	0	1	1no
+AC155352.2_FG001	AC155352.2_FG001	AC155352.2_FG001	Chr2:34720872-34723703	B73.s	Mo17.s	NOTEST	0.0887383	0.269653	1.11145-1.00548	0.314668	1	no
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ tail cuffdiff.txt
+GRMZM5G897673	GRMZM5G897673	GRMZM5G897673	Chr6:163623996-163626773	B73.s	Mo17.s	OK	1.12421	0.87442	-0.251278	0.257033	0.797154	0.968129	no
+GRMZM5G897926	GRMZM5G897926	GRMZM5G897926	Chr3:193608324-193614651	B73.s	Mo17.s	OK	52.6609	3.75896	-2.63973	3.50057	0.000464259	0.00699928	yes
+GRMZM5G897944	GRMZM5G897944	GRMZM5G897944	Chr6:94760639-94762100	B73.s	Mo17.s	OK	1.54876	0.378303	-1.40952	1.26417	0.20617	0.453251	no
+GRMZM5G898597	GRMZM5G898597	GRMZM5G898597	Chr3:194825528-194829564	B73.s	Mo17.s	OK	4.00419	17.2339	1.45954	-1.42569	0.153958	0.36942	no
+GRMZM5G898684	GRMZM5G898684	GRMZM5G898684	Chr2:209584089-209610220	B73.s	Mo17.s	OK	140.728	5.58483	-3.22677	7.96319	1.77636e-15	2.73904e-13	yes
+GRMZM5G898887	GRMZM5G898887	GRMZM5G898887	Chr7:95095946-95119315	B73.s	Mo17.s	OK	1.4323	2.67491	0.624633	-0.761464	0.44638	0.739446	no
+GRMZM5G899168	GRMZM5G899168	GRMZM5G899168	Chr3:192720999-192723809	B73.s	Mo17.s	OK	4.80996	6.61928	0.319298	-0.384778	0.700402	0.921178	no
+GRMZM5G899308	GRMZM5G899308	GRMZM5G899308	Chr5:74338820-74340748	B73.s	Mo17.s	OK	0	0	0	0	1	1.03367	no
+GRMZM5G899390	GRMZM5G899390	GRMZM5G899390	Chr6:127199972-127203814	B73.s	Mo17.s	OK	11.7603	27.1311	0.835955	-0.955454	0.339348	0.629747	no
+GRMZM5G899800	GRMZM5G899800	GRMZM5G899800	Chr1:201466635-201469411	B73.s	Mo17.s	OK	21.9596	30.5029	0.328617	-0.375106	0.707582	0.925056	no
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ less cuffdiff
+cuffdiff: Arquivo ou diretório inexistente
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ less cuffdiff.txt
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ 
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ grep Chr2 cuffdiff.txt | wc -l
+983
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ grep Chr2 cuffdiff.txt 
+grep Chr2 cuffdiff.txt | wc -l
+983
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ time grep -c Chr2 cuffdiff.txt
+983
+
+real	0m0,006s
+user	0m0,005s
+sys	0m0,000s
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ wc -l cuffdiff.txt
+8256 cuffdiff.txt
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ man time
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ apropos
+apropos o quê?
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ apropos count
+acct (5)             - process accounting file
+cksum (1)            - checksum and count the bytes in a file
+fincore (1)          - count pages of file contents in core
+goa-daemon (8)       - GNOME Online Accounts Daemon
+pam_faillock (8)     - Module counting authentication failures during a specified interval
+pam_lastlog (8)      - PAM module to display date of last login and perform inactive account lock out
+pam_succeed_if (8)   - test account characteristics
+pam_usertype (8)     - check if the authenticated user is a system or regular account
+rdma-statistic (8)   - RDMA statistic counter configuration
+sum (1)              - checksum and count the blocks in a file
+systemd-bless-boot-generator (8) - Pull systemd-bless-boot.service into the initial boot transaction when boot counting is in effect
+userdel (8)          - delete a user account and related files
+usermod (8)          - modify a user account
+wc (1)               - print newline, word, and byte counts for each file
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ grep -c "\tChr2:" cuffdiff.txt
+0
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ grep -Ec "\tChr2:" cuffdiff.txt
+0
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ grep -Pc "\tChr2:" cuffdiff.txt
+983
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ grep -P "Chr2" cuffdiff.txt |sort -rnk10 |head -n1 |cut -f3
+GRMZM2G053985
