@@ -1,0 +1,73 @@
+#!/usr/bin/env python3
+import sys
+
+DNA = 'CGTCGTCGCCGCCGCCGCCATGTCGGGAGGTGGTGTGATCCGTGGCCCGACGAAAAAAAAAAAAAGCGGGGAACAACGACTGCCGCATCTACGTGTAAAAAAACGAAAAAAAAAAAAAAAAAAAA'
+print(DNA[-3:])
+
+seq = 'accgtca'
+
+for nt in seq:
+ print(nt)
+
+#Específica onde começa e onde termina
+list(range(0,len(seq)))
+
+#for é utilizado quando você sabe o final
+for inx in range(0, len(seq)):
+ print(seq[inx])
+
+#while pode ser utilizado tanto para coisas que você sabe o final, quanto para aquelas que você não sabe
+c = 0
+while c<5:
+ print(c)
+ c = c + 1
+
+favs = ['lotr','pizza','orange_juice', 'family', 'cat']
+print(favs)
+print(favs[2]) #imprimindo o valor da metade
+favs[2] = 'SNAP' #mudando o valor da metade, pois é uma lista e elas podem ser mudadas
+print(favs[2])
+#tuplas são imutáveis, mas úteis quando não pode mudar algum valor
+favs.append('the_hundred') #irá adicionar no final um novo index, porém adiciona apenas um elemento na lista ou uma nova lista dentro de uma >
+#já o extend poderá adicionar vários números na lista
+print(favs)
+favs.insert(0,'x') #coloca na posição que você desejar
+print(favs)
+favs.pop() #irá tirar o último elemento da lista
+print(favs)
+
+#novo script string -> lista
+taxa = 'sapiens, erectus, neardenthalensis'
+type(taxa)
+taxa[1]
+print(taxa[1]) #irá mostrar a letra de tal index
+taxa.split(',') #irá criar uma lista
+species = taxa.split(',')
+print(species)
+species[1]
+print(species[1])
+
+sps = species #neste modo uma copia irá modificar a outra
+sps = species.copy() #não irá mudar a lista original
+
+# loop que imprima de 1 a 100
+start = 1
+while start < 101:
+ print(start)
+ start +=1
+print('terminado')
+
+# imprimir o fatorial de 10
+n = 10
+r = 1
+while n > 1:
+ r = r*n
+ n -=1
+print(r)
+
+b = 1000
+a = 1
+while b > 1:
+ a = a*b
+ b -=1
+print(a)
