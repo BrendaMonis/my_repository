@@ -87,3 +87,14 @@ for n in lista:
 
 print(soma_par)
 print(soma_impar)
+
+#é necessário criar uma nova variável para ter acesso a soma dos n casos
+
+lista = [101, 2, 15, 22, 95, 33, 2, 27, 72, 15, 52]
+par = []
+impar = []
+[par.append(n) for n in lista if  n % 2 == 0]
+sum(par)
+[impar.append(n) for n in lista if n%2 !=0]
+sum(impar)
+print(sum(par), sum(impar))
