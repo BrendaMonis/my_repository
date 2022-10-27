@@ -1,0 +1,37 @@
+>>> nt_count={}
+>>> 
+>>> dna = 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA'
+>>> for nt in dna:
+...   if nt in nt_count:
+...     nt_count[nt] += 1
+...   else:
+...     nt_count[nt] = 1;
+... 
+>>> print(nt_count)
+{'G': 20, 'T': 21, 'A': 13, 'C': 16}
+>>> genes = { 
+...            'TP53' : 'GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTC' , 
+...            'BRCA1' : 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA' 
+...          }
+
+script_aula_7.py:
+
+#!/usr/bin/env python3
+
+import sys
+
+genes = { 
+           'TP53' : 'GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGC>
+           'BRCA1' : 'GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCG>
+         }
+
+for g in genes:
+ print(g)
+ print(genes[g])
+ nt_count = {}
+ print(nt_count)
+ unique_nt = set(genes[g])
+ for nt in unique_nt:
+  nt_count[nt] = genes[g].count(nt)
+ print(nt_count)
+
