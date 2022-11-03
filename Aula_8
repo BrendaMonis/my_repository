@@ -1,0 +1,150 @@
+nano sequence_ex.txt
+TP53    GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTC
+BRCA1   GTACCTTGATTTCGTATTCTGAGAGGCTGCTGCTTAGCGGTAGCCCCTTGGTTTCCGTGGCAACGGAAAA
+
+nano python6_1.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ chmod +x python6_1.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ./python6_1.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ nano python6_1.py
+
+python6_1.py:
+
+#!/usr/bin/env python3 
+import sys
+
+#Tal exercício visa fazer um dicionário
+genes = {}
+with open("sequence_ex.txt","r") as seq_read:
+  for line in seq_read:
+    line = line.rstrip() 
+    gene_id,seq = line.split() #split on whitespace
+    genes[gene_id] = seq
+print(genes)
+
+nano python_06.txt
+Runnin' Down a Dream
+By Tom Petty
+It was a beautiful day, the sun beat down
+I had the radio on, I was drivin'
+Trees flew by, me and Del were singin' little Runaway
+I was flyin'
+Yeah runnin' down a dream
+That never would come to me
+Workin' on a mystery, goin' wherever it leads
+Runnin' down a dream
+I felt so good like anything was possible
+I hit cruise control and rubbed my eyes
+The last three days the rain was unstoppable
+It was always cold, no sunshine
+Yeah runnin' down a dream
+That never would come to me
+Workin' on a mystery, goin' wherever it leads
+Runnin' down a dream
+I rolled on as the sky grew dark
+I put the pedal down to make some time
+There's something good waitin' down this road
+I'm pickin' up whatever's mine
+Yeah runnin' down a dream
+That never would come to me
+Workin' on a mystery, goin' wherever it leads
+Runnin' down a dream
+
+
+nano python6_2.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ chmod +x python6_2.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ./python6_2.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ nano python6_2.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ./python6_2.py
+RUNNIN' DOWN A DREAM
+BY TOM PETTY
+IT WAS A BEAUTIFUL DAY, THE SUN BEAT DOWN
+I HAD THE RADIO ON, I WAS DRIVIN'
+TREES FLEW BY, ME AND DEL WERE SINGIN' LITTLE RUNAWAY
+I WAS FLYIN'
+YEAH RUNNIN' DOWN A DREAM
+THAT NEVER WOULD COME TO ME
+WORKIN' ON A MYSTERY, GOIN' WHEREVER IT LEADS
+RUNNIN' DOWN A DREAM
+I FELT SO GOOD LIKE ANYTHING WAS POSSIBLE
+I HIT CRUISE CONTROL AND RUBBED MY EYES
+THE LAST THREE DAYS THE RAIN WAS UNSTOPPABLE
+IT WAS ALWAYS COLD, NO SUNSHINE
+YEAH RUNNIN' DOWN A DREAM
+THAT NEVER WOULD COME TO ME
+WORKIN' ON A MYSTERY, GOIN' WHEREVER IT LEADS
+RUNNIN' DOWN A DREAM
+I ROLLED ON AS THE SKY GREW DARK
+I PUT THE PEDAL DOWN TO MAKE SOME TIME
+THERE'S SOMETHING GOOD WAITIN' DOWN THIS ROAD
+I'M PICKIN' UP WHATEVER'S MINE
+YEAH RUNNIN' DOWN A DREAM
+THAT NEVER WOULD COME TO ME
+WORKIN' ON A MYSTERY, GOIN' WHEREVER IT LEADS
+RUNNIN' DOWN A DREAM
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ nano python6_2.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ./python6_2.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ nano python6_2.py
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ ls -l
+total 1232
+-rw-rw-r-- 1 brenda brenda       0 out  6 09:25 '=2.26'
+drwxr-xr-x 2 brenda brenda    4096 set  2 10:09 'Área de Trabalho'
+-rw-rw-r-- 1 brenda brenda      52 out 11 14:10  arquivo.txt
+-rw-rw-r-- 1 brenda brenda      36 out 27 19:16  aula_python5.py
+-rwxrwxr-x 1 brenda brenda     925 out 16 10:09  bash_script.sh
+-rwxrwxr-x 1 brenda brenda       4 out 14 19:46  brenda.sh
+-rwxrwxr-x 1 brenda brenda     101 out  1 10:02  bruna.py
+-rw-rw-r-- 1 brenda brenda 1113672 out 12 12:39  cuffdiff.txt
+-rw-rw-r-- 1 brenda brenda      14 out 12 12:38  cuffdiff.txt~
+-rwxrwxr-x 1 brenda brenda     524 out 12 17:47  dna.py
+drwxr-xr-x 2 brenda brenda    4096 nov  2 17:34  Documentos
+drwxr-xr-x 5 brenda brenda    4096 nov  3 19:08  Downloads
+-rw-rw-r-- 1 brenda brenda       0 out 12 11:48  fav_chr_cuffdiff.txt
+drwxrwxr-x 2 brenda brenda    4096 out 28 22:21  fotos
+-rwxrwxr-x 1 brenda brenda      50 out 12 15:11  hello.py
+-rw-rw-r-- 1 brenda brenda     110 out 12 12:25  hello-world.c
+drwxr-xr-x 2 brenda brenda    4096 set  2 10:09  Imagens
+-rwxrwxr-x 1 brenda brenda     102 set 27 15:13  joao.py
+-rwxrwxr-x 1 brenda brenda    1603 out 14 16:08  lista_HOME.txt
+drwxr-xr-x 2 brenda brenda    4096 set  2 10:09  Modelos
+drwxr-xr-x 2 brenda brenda    4096 set  2 10:09  Música
+drwxr-xr-x 2 brenda brenda    4096 set  2 10:09  Público
+-rw-rw-r-- 1 brenda brenda     848 nov  3 19:44  python_06.txt
+-rw-rw-r-- 1 brenda brenda     848 nov  3 19:53  python_06_uc.txt
+-rwxrwxr-x 1 brenda brenda     275 nov  3 19:34  python6_1.py
+-rwxrwxr-x 1 brenda brenda     203 nov  3 19:53  python6_2.py
+-rwxrwxr-x 1 brenda brenda     288 out 13 17:33  scipt3.py
+-rwxrwxr-x 1 brenda brenda     322 out 12 16:31  script1.py
+-rwxrwxr-x 1 brenda brenda     203 set 15 21:34  script2.py
+-rwxrwxr-x 1 brenda brenda     428 out 27 20:24  script_aula_7.py
+-rwxrwxr-x 1 brenda brenda    3036 out 16 21:38  script_cDNA.py
+-rwxrwxr-x 1 brenda brenda    2436 out 20 21:34  script_hipotenusa.py
+-rw-rw-r-- 1 brenda brenda     158 nov  3 19:21  sequence_ex.txt
+drwx------ 5 brenda brenda    4096 out 12 12:37  snap
+-rwxrwxr-x 1 brenda brenda     338 out 12 16:37  tentativa.py
+-rwxrwxr-x 1 brenda brenda    2295 out 20 21:24  teste_aula7.py
+-rwxrwxr-x 1 brenda brenda    2904 out 16 22:11  teste_DNA.py
+drwxr-xr-x 2 brenda brenda    4096 set  2 10:09  Vídeos
+-rw-r--r-- 1 brenda brenda    2449 out 11 15:05  x
+brenda@brenda-Lenovo-IdeaPad-S145-15IIL:~$ head python_06_uc.txt
+RUNNIN' DOWN A DREAM
+BY TOM PETTY
+IT WAS A BEAUTIFUL DAY, THE SUN BEAT DOWN
+I HAD THE RADIO ON, I WAS DRIVIN'
+TREES FLEW BY, ME AND DEL WERE SINGIN' LITTLE RUNAWAY
+I WAS FLYIN'
+YEAH RUNNIN' DOWN A DREAM
+THAT NEVER WOULD COME TO ME
+WORKIN' ON A MYSTERY, GOIN' WHEREVER IT LEADS
+RUNNIN' DOWN A DREAM
+
+
+nano python6_2.py
+!/usr/bin/env python3
+import sys
+
+seq_fqo = open("python_06_uc.txt", "w")
+with open ("python_06.txt", "r") as seq_fh:
+ for line in seq_fh:
+  line = line.rstrip().upper()
+  seq_fqo.write(f'{line}\n')
+
