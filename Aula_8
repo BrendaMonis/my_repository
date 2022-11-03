@@ -143,8 +143,10 @@ nano python6_2.py
 import sys
 
 seq_fqo = open("python_06_uc.txt", "w")
+seq_fqo2 = open("python_06_uc2.txt", "w")
 with open ("python_06.txt", "r") as seq_fh:
- for line in seq_fh:
-  line = line.rstrip().upper()
-  seq_fqo.write(f'{line}\n')
+        for line in seq_fh:
+                line = line.rstrip().upper()
+                seq_fqo.write(f'{line}\n')
+                print (line, file = seq_fqo2)
 
